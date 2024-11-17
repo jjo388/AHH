@@ -1,0 +1,29 @@
+#dna-container {
+  position: relative;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  perspective: 1000px; /* Add 3D perspective */
+}
+
+#dna-model {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d; /* Make sure 3D transforms are preserved */
+  transition: transform 0.3s ease; /* Smooth transitions for rotation */
+}
+
+#controls {
+  position: absolute;
+  top: 650px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

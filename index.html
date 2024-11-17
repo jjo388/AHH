@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D DNA Model</title>
+  <style>
+    body { margin: 0; }
+    canvas { display: block; }
+    #controls {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 1;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <button onclick="introduceMutation()">Introduce Pyrimidine Dimer</button>
+  </div>
+
+  <!-- 1. Load Three.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- 2. Load OrbitControls from CDN (ensure this comes after three.min.js) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/examples/js/controls/OrbitControls.js"></script>
+
+  <!-- 3. Your app's main JavaScript logic -->
+  <script src="app.js"></script>
+</body>
+</html>
